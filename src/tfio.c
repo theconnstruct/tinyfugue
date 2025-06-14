@@ -45,6 +45,7 @@ static const char RCSid[] = "$Id: tfio.c,v 35004.114 2007/01/13 23:12:39 kkeys E
 #include "variable.h"	/* getvar() */
 #include "keyboard.h"	/* keyboard_pos */
 #include "expand.h"	/* current_command */
+#include "socket.h"	/* main_loop */
 #include "cmdlist.h"
 
 TFILE *loadfile = NULL; /* currently /load'ing file */
