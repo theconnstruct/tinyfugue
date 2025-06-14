@@ -34,6 +34,7 @@ extern int low_memory_warning;
 # define realloc(ptr, size)		mrealloc(NULL, ptr, size)
 # define free(ptr)			mfree(NULL, ptr)
 #else
+# include <stdlib.h>
 # define mmalloc(md, size)		malloc(size)
 # define mcalloc(md, size)		calloc(size)
 # define mrealloc(md, ptr, size)	realloc(ptr, size)
